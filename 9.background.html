@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>CSS Background Properties</title>
+    <style>
+        .container{
+            background-color: black;
+            /*    background-image: url("https://img.freepik.com/free-photo/movie-background-collage_23-2149876030.jpg?semt=ais_rp_progressive&w=740&q=80"); */
+            background-size: cover; 
+            background-size: 105% 105%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background: radial-gradient("https://img.freepik.com/free-photo/movie-background-collage_23-2149876030.jpg?semt=ais_rp_progressive&w=740&q=80"); 
+            background: conic-gradient("https://img.freepik.com/free-photo/movie-background-collage_23-2149876030.jpg?semt=ais_rp_progressive&w=740&q=80");
+            background: linear-gradient("https://img.freepik.com/free-photo/movie-background-collage_23-2149876030.jpg?semt=ais_rp_progressive&w=740&q=80");
+            color:white;
+            height: 150vh;
+        }
+        h1{
+             font-family: "Dancing Script", cursive;
+            font-weight: 500;
+            font-style: oblique;
+            text-transform: capitalize;
+            text-shadow: 15px 15px 15px white;
+        }
+        .text{
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: overline;
+            line-height: 2.3;
+        }
+        .size{
+            font-size: 25px;
+        }
+        .watch-section{
+            background-color:rgb(9, 238, 51);
+            height: 40vh;
+            width: 70%;
+        }
+        .download-section{
+            background-color:coral;
+            height: 40vh;
+            width: 70%;
+        }
+        #Join-Section{
+            background-color: rgba(100, 171, 232, 0.645);
+            height: 55%;
+            width: 40%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <center>    
+    <h1>Welcome to Amazon Prime Video</h1>
+    <p class="text">Join Prime to Watch the Latest Movies, TV shows and Award-winning
+        Amazon Originals.
+    </p>
+    <button style="color:blue">Sign In To Join Prime</button>
+    </center>
+    <section id="Join-Section">
+        <div class="watch-section">
+            <h2>Watch Movies Online</h2>
+            <p class="size">Customers can subscribe to get access</p>
+        </div>
+        <div class="download-section">
+            <h2>Download Movies & TV Shows</h2>
+            <p class="size">Variety of Premium and Specialty content</p>
+        </div>
+    </section>
+    </div>
+</body>
+</html>
