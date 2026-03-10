@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        body{
+            background-color: cadetblue;
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            height: 100vh;
+        }
+        body::selection{
+            background-color: cornflowerblue;
+            color: black;
+        }
+        h1{
+            font-size: 50px;
+            line-height: 2.5;
+        }
+        h1::first-letter{
+            font-size: 40px;
+            color:coral;
+            font-style: oblique;
+            font-family:'Times New Roman', Times, serif
+        }
+        p::before{
+            content: "Description: ";
+            color:green;
+        }
+        p::after{
+            content:"🤬";
+            font-size: 30px; 
+        }
+        p{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        p::first-line{
+            font-size: 25px;
+            font-style: italic;
+            color:darkblue;
+            font-family: cursive;
+
+        }
+        button{
+            width: 10%;
+            color:brown;
+            font-weight: bold;
+        }
+        button:hover{
+            background-color:chocolate;
+            color: white;
+        }
+        a:link{
+            color: purple;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 2.2;
+        }
+        a:active{
+            color:aqua;
+        }
+        a:visited{
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:black">WELCOME TO TEAM INDIA WORLD CUP</h1>
+    <p style="color:saddlebrown;">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+        Odio amet sequi atque, eveniet similique temporibus obcaecati <br>
+        maiores voluptate! Voluptatibus expedita quod error rem quidem <br>
+            tempora perferendis voluptate ducimus, debitis repellendus.</p>
+            <button>Get Started</button><br>
+            <a href="https://www.cricbuzz.com/live-cricket-scores/33417/ind-vs-pak-2nd-t20i-pakistan-tour-of-india-2023" target="_blank">Click Here To Watch Live Match</a>
+</body>
+</html>
