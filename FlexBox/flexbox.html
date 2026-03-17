@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        body{
+            height: 100vh;
+        }
+        .container{
+            background-color: rgb(48, 18, 182);
+            height: 90vh;
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid #dbdbdb;
+            text-align: center;
+            display: flex;
+            flex-direction:column;
+            flex-wrap:wrap;
+            gap: 10px;
+            justify-content:center;
+            align-items: flex-start; 
+            /* align-content: flex-end; */
+        }
+        .box{
+            height: 30px;
+            width: 65px;
+            background-color:rgba(5, 212, 84, 0.675);
+            margin: 5px;
+        }
+        .box2{
+            align-self: flex-start;
+        }
+        .box4{
+            align-self: flex-end;
+        }
+        .box6{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box">1.ONE</div>
+    <div class="box box2">2.TWO</div>
+    <div class="box">3.THREE</div>
+    <div class="box box4">4.FOUR</div>
+    <div class="box">5.FIVE</div>
+    <div class="box box6">6.SIX</div>
+    <div class="box">7.SEVEN</div>
+    <div class="box">8.EIGHT</div>
+    <div class="box">9.NINE</div>
+    <div class="box">10.TEN</div>
+    </div>
+</body>
+</html>
