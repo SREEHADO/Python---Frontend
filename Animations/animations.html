@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations In CSS</title>
+    <style>
+        body{
+            height: 100vh;
+            background-color: darkblue;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        h1{
+            text-align: center;
+            color: cadetblue;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode;
+            animation-name: ;
+            animation-duration: ;
+            animation-timing-function: ;
+            animation-delay: ;
+            animation-iteration-count: ;
+            animation-direction: ;
+            animation-fill-mode: ; */
+            animation: color-change 2s ease-in 0.1s 5;
+        }
+
+        @keyframes color-change{
+            0%{
+                color: plum;
+            }
+            100%{
+                color: brown;
+            }
+        }
+
+        .box{
+            background-color: aqua;
+            height: 90px;
+            width: 90px;
+            border-radius: 5px;
+            position: relative;
+            animation: position-change 3s ease 1s 3;
+        }
+
+        @keyframes position-change {
+            0%{
+                left: 0;
+                top: 0;
+            }
+            25%{
+                left: 90%;
+                top: 0;
+                background-color: chartreuse;
+            }
+            50%{
+                top: 70%;
+                background-color: blueviolet;
+                left: 90%;
+                border-radius: 50%;
+            }
+            75%{
+                top:70%;
+                left: 0;
+                background-color: cornflowerblue;
+            }
+            100%{
+                left: 0;
+                top: 0;
+                background-color: coral;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Animations</h1>
+    <div class="box"></div>
+</body>
+</html>
