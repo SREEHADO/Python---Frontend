@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone</title>
+    <style>
+        body{
+            background-color: #fafafa;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .box{
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            width: 250px;
+        }
+        .logo{
+            font-family: cursive;
+            font-size: 25px;
+        }
+        input{
+            margin: 3px;
+            padding: 10px;
+            width: 75%;
+            background-color: #fafafa;
+            border: 1px solid #dbdbdb;
+        }
+        button{
+            width: 85%;
+            border: none;
+            border-radius: 5px;
+            padding: 5px;
+            margin-top: 3px;
+            background-color: #0095f6;
+        }
+        .or{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .or p{
+            font-size: 14px;
+            color: grey;
+        }
+        span{
+            flex: 1;
+            border-top: 1px solid #dbdbdb;
+            height: 1px;
+        }
+        .facebook{
+            text-decoration: none;
+            font-size: 16px;
+            color: #385185;
+        }
+        .forgot{
+            text-decoration: none;
+            font-size: 15px;
+            color: #3751ff;
+        }
+        .sign-up{
+            background-color: #fff;
+            border: 1px solid #dbdbdb;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <h1 class="logo">Instagram</h1>
+            <input type="text" placeholder="Phone number, username, or email"/>
+            <input type="password" placeholder="password"/><br>
+            <button class="log-in">Log in</button>
+            <div class="or">
+                <span></span>
+                <p>OR</p>
+                <span></span>
+            </div>
+            <a href="#" class="facebook">Login with facebook</a><br>
+            <a href="#" class="forgot">Forgot Password?</a>
+        </div>
+        <div class="sign-up">
+            <p>Don't have an account?</p>
+            <a href="#" class="sing-up-text">Sign Up</a>
+        </div>
+    </div>
+</body>
+</html>

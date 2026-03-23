@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body{
+            background-color: darkcyan;
+            height: 100vh;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            justify-content: center;
+            margin: 10px;
+            padding: 10px;
+        }
+        h1{
+            color: purple;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        p{
+            font-size: 15px;
+            color: rgb(6, 16, 34);
+            font-weight: bold;
+        }
+        h3{
+            color: brown;
+            font-size: 20px;
+        }
+        button{
+            background-color: chartreuse;
+            border-radius: 10px;
+            padding: 3px;
+            width: 10%;
+        }
+        @media(max-width:576px){
+            body{
+                background-color:rgb(14, 56, 42);
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                margin: 10px;
+            }
+            h1{
+                font-size: 22px;
+                color: darkcyan;
+            }
+            p{
+                font-size: 13px;
+                color:violet;
+            }
+        }
+        @media(min-width:768px) and (max-width:992px){
+            body{
+                font-family: cursive;
+            }
+            h1{
+                font-size: 28px;
+                color: rgb(153, 35, 74);
+            }
+            h3{
+                font-size: 19px;
+                color: darksalmon;
+            }
+            p{
+                font-size: 12px;
+                color: hotpink;
+            }
+            button{
+                background-color: blueviolet;
+                border: none;
+                border-radius: 5px;
+                padding: 3px;
+                width: 20%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Watch PSPK USB</h1>
+    <h3>On Allu Cinemas</h3>
+    <p>Get Ticket Price From ₹200/-</p>
+    <button style="font-weight: bold;">Join Now</button>
+</body>
+</html>
