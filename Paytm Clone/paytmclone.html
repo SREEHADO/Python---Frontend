@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm Clone</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body{
+            background-color: #fafafa;
+            height:100vh;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .navbar{
+            background-color:#fff;
+            padding:10px 20px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+        .navbar ul{
+            display:flex;
+            list-style-type:none;
+            gap:20px;
+        }
+        .navbar ul li{
+            font-size:15px;
+            color:#000;
+            font-weight:bold;
+        }
+        .navbar ul li:hover{
+            color:#00baf2;
+        }
+        .navbar h3{
+            color:#00baf2;
+        }
+        .navbar button{
+            background-color:#00baf2;
+            color:#fff;
+            font-size:12px;
+            width:8%;
+            border:none;
+            border-radius:5px;
+            padding:5px;
+        }
+        #download{
+            padding:30px 50px;
+            background: color #f5f9ff;
+        }
+        #download h1{
+            font-size:30px;
+            padding-bottom:10px;
+        }
+        #download p{
+            font-size:15px;
+            padding-bottom:10px;
+        }
+        #download button{
+            width:20%;
+            background-color:#000;
+            border-radius:20px;
+            padding:10px;
+            color:#fff;
+            border:none;
+            cursor:pointer;
+        }
+        #services{
+            padding:20px 30px;
+            background-color:#00baf2
+        }
+        #services h3{
+            color:#fff;
+            font-size:20px;
+            padding-bottom:10px;
+        }
+        .items-container{
+            display:grid;
+            grid-template-columns:repeat(5,1fr);
+            gap:40px;
+            margin-bottom:20px;
+        }
+        .item{
+            background-color:#fff;
+            padding:10px;
+            border-radius:10px;
+            text-align:center;
+        }
+        #upi{
+            padding: 25px 30px;
+        }
+        #upi h3{
+            font-size: 12px;
+            padding-bottom: 10px;
+        }
+        #upi p{
+            font-size: 12px;
+            padding-bottom: 10px;
+        }
+        #wallet{
+            background-color:#002970;
+            padding:50px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            color:white;
+        }
+        #wallet img{
+            width:250px;
+        }
+        #wallet h3{
+            padding-bottom:5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h3 class="logo">paytm</h3>
+        <ul class="nav-items">
+            <li>Consumetrs</li>
+            <li>Business</li>
+            <li>Company</li>
+            <li>Career</li>
+        </ul>
+        <button>Sign In</button>
+    </nav>
+    <section id="download">
+        <h1>India's Most-loved payments App</h1>
+        <p>Recharge,pay Bills,Send money & More</p>
+        <button>Download Paytm app</button>
+    </section>
+    <section id="services">
+        <h3>Recharge & Pay Bills</h3>
+        <div class="items-container">
+              <div class="item">📱<br>Mobile</div>
+            <div class="item">💡<br>Electricity</div>
+            <div class="item">📡 <br>DTH</div>
+            <div class="item">🏠<br>Rent</div>
+            <div class="item">⛽<br>Gas</div>
+        </div>
+    </section>
+     <section id="upi">
+        <h3>Paytm UPI</h3>
+        <p>Instant, Secure & Fast Payments directly From Your Bank.</p>
+    </section>
+    <section id="wallet">
+        <div class="wallet-left">
+        <h3>Paytm Wllet & UPI</h3>
+        <p>Send Money,Scan & pay instantly</p>
+            </div>
+        <div class="wallet-right">
+            <img src="https://assetscdn1.paytm.com/images/catalog/view_item/728701/1618577020961.png" class="wallet-img" alt="not found">
+        </div>    
+    </section>
+</body>
+</html>
