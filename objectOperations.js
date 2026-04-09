@@ -65,3 +65,34 @@ let result = assign.bind(student);
 result();
 
 
+let obj = {
+    a:1,
+    b:2,
+    sum(){
+        return this.a + this.b
+    }
+}
+
+// console.log(obj.sum())
+const boundSum = obj.sum.bind(obj);
+console.log(boundSum())
+
+let product1 = [
+  {
+    item_1: 'clothes',
+    price: '500',
+    type: 'linen'
+  },
+  {
+    item_2: 'electronics',
+    price: '1000',
+    type: 'mobile'
+  },
+  {
+    item_3: 'furniture',
+    price: '2000',
+    type: 'table'
+  }
+];
+
+console.log(product1);
