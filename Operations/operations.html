@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = "Hello World";
+        console.log(str.length);
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+        console.log(str.includes("World"));
+        console.log(str.indexOf("o"));
+        console.log(str.slice(0, 5));
+        console.log(str.replace("World", "JavaScript"));
+        console.log(str.split(" "));
+        console.log(str.trim());
+        console.log(str.split(""));
+        console.log(str.split(" ").reverse().join("#"));
+        let val = 'madam'
+        let result = val.split("").reverse().join("");
+        console.log(result);
+
+        if(val === result){
+            console.log("Palindrome");
+        } else {
+            console.log("Not a palindrome");
+        }
+
+        console.log(Math.round(4.5));
+        console.log(Math.ceil(4.2));
+        console.log(Math.floor(4.8));
+        console.log(Math.random());
+        console.log(Math.pow(2, 3));
+        console.log(Math.sqrt(16));
+        console.log(Math.floor(Math.random() * 10) + 1);
+
+        let date = new Date();
+        console.log(date);
+
+        console.log(date.toLocalString());
+        console.log(date.toLocalTimeString());
+        console.log(date.toLocalDateString());
+
+        console.log(date.getDay());
+        console.log(date.getDate());
+        console.log(date.getMonth()+1);
+        console.log(date.getFullYear());
+
+        console.log(date.getHours());
+        console.log(date.getMinutes());
+        console.log(date.getSeconds());
+        console.log(date.getMilliseconds());
+
+    </script>
+    
+</body>
+</html>
