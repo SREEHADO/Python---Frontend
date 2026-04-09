@@ -96,3 +96,4 @@ let product1 = [
 ];
 
 console.log(product1);
+
