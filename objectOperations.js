@@ -63,4 +63,3 @@ assign.apply(student);
 assign.call(student);
 let result = assign.bind(student);
 result();
-
