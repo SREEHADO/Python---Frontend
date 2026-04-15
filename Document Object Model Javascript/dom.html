@@ -3,25 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM JavaScript</title> 
+    <title>DOM JavaScript</title>
+    <style>
+        .desc{
+            color: darkblue;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
 </head>
+
 <body>
-    <h2>WELCOME TO DOM JAVASCRIPT</h2>
+    <h2 id="text">Welcome To JavaScript</h2>
     <div>
-        <p>Elements Getting By Class</p>
-        <p>Elements Getting By Tag</p>
-        <p>Elements Getting By Queries</p>
-        <ul>
-            <li>DOM</li>
-            <li>DOM Tree</li>
+        <p class="desc">Elements Getting By Class</p>
+        <p class="desc">Elements Getting By Tag</p>
+        <p class="desc">Elements Getting By Queries</p>
+        <ul id="unordered">
+            <li class="list">DOM</li>
+            <li class="list">Event Handling</li>
+            <li class="list">Regular Expressions</li>
+            <li class="list">JavaScript Methods</li>
         </ul>
     </div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ15vomRcE-xJjO1Gm0Y4fKDNSyFtnAiozcEQ&s"
+        alt="not-found" id="image" /><br><br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSs7WiODvcpZjLvotJGqqJWGBsvxv6W0qOXQ&s" 
+    alt="not-founding" id="image" /><br><br>
+
     <button>Get Started</button>
+    <button>Click</button>
+
     <script>
-        let element = document.getElementById('text')//.style.color = 'red';
+        let element = document.getElementById("text")//.style.color="crimson";
         console.log(element);
-        element.innerText = 'Welcome to Dynamic JavaScript';
-        element.style.color = 'red';
+        element.innerText = 'Welcome To Dynamic JavaScript';
+        element.style.color = "blueviolet";
+
+        let descriptions = document.getElementsByClassName("desc");
+        console.log(descriptions);
+        descriptions[0].innerText = 'Getting Elements By Class Name';
+        descriptions[2].innerHTML = '<h3>Getting Elements By Query Selectors</h3>';
+
+        let button = document.getElementsByTagName("button");
+        button[1].innerText = 'Join Now';
+
+        let query = document.querySelector("#image");
+        query.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROzo11wsrHGEyP9I56ngk1JMMhoDQ6F1P20w&s";
+
+        let all = document.querySelectorAll(".list");
+        all[0].innerText = 'Document Object Model';
+        all[1].innerText = 'AddEventListeners';
+
+        let un_ord = document.querySelectorAll("#unordered");
+
+        un_ord.forEach((e)=>{
+            e.style.color = 'red';
+        })
+
     </script>
 </body>
+
 </html>
