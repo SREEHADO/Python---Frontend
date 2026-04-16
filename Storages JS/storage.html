@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Storages In Js Local & Session</h1>
+    <script>
+        let data = "Kulakarni Sri Gouri";
+        let store = localStorage.setItem("username", data);
+        console.log(localStorage.getItem("username"));
+        localStorage.removeItem("username");
+
+        let data_2 ={
+            employee_company_name : 'Sia Group',
+            salary : '20LPA',
+        }
+
+        let store_2 = sessionStorage.setItem("obj", JSON.stringify(data_2));
+        console.log(sessionStorage.getItem("obj"));
+        
+    </script>
+</body>
+</html>

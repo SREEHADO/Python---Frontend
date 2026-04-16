@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classess</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+        }
+        .main-heading{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 40px;
+            font-weight: 400;
+            color: white;
+        }
+    </style>    
+</head>
+<body>
+    <h1 id="text">Unlimited Movie Shows & More</h1>
+    <h4>Starts At ₹149, Claim Now</h4>
+    <p id="desc">Join Membership to Watch the Latest Movies, TV Shows & Series</p>
+    <button>Get Started</button>
+    <script>
+        let text = document.getElementById("text");
+        text.className = "main-heading";
+
+        let desc = document.getElementById("desc");
+        desc.classList.add('main-heading');
+        // desc.classList.remove('main-heading');
+    </script>    
+</body>
+</html>
