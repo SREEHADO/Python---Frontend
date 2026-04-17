@@ -9,6 +9,7 @@
     <h1>Storages In Js Local & Session</h1>
     <script>
         let data = "Kulakarni Sri Gouri";
+        console.log(typeof(data));
         let store = localStorage.setItem("username", data);
         console.log(localStorage.getItem("username"));
         localStorage.removeItem("username");
@@ -17,10 +18,17 @@
             employee_company_name : 'Sia Group',
             salary : '20LPA',
         }
+        console.log(typeof(data_2));
 
         let store_2 = sessionStorage.setItem("obj", JSON.stringify(data_2));
-        console.log(sessionStorage.getItem("obj"));
-        
+        // sessionStorage.removeItem("obj");
+        let result = sessionStorage.getItem("obj");
+        console.log(result);
+        console.log(typeof(result));//string
+        const parased = JSON.parse(result);
+        console.log(typeof(parased));//object
+        console.log(parased.employee_company_name);
+        console.log(parased.salary);
     </script>
 </body>
 </html>

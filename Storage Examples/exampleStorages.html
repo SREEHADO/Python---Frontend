@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storages Example</title>
+  </head>
+  <body>
+    <input type="text" id="input" placeholder="Enter your Value" />
+    <button onclick="local()">Save Local</button>
+    <button onclick="session()">Save Session</button>
+    <button onclick="store()">Store</button>
+    <script>
+      let input = document.getElementById("input").value;
+      function local() {
+        let value = document.getElementById("input").value;
+        localStorage.setItem("data", value);
+      }
+      function session() {
+        let value = document.getElementById("input").value;
+        sessionStorage.setItem("data", value);
+      }
+      function store() {
+        let local = localStorage.getItem("data");
+        let session = sessionStorage.getItem("data");
+        console.log("Local Value:", local);
+        console.log("Session Value:", session);
+      }
+    </script>
+  </body>
+</html>
