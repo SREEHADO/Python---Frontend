@@ -53,8 +53,8 @@ console.log([...arr_1, ...arr_2]);
 // The spread operator (...) is used to expand the elements of an array or object. In the example above, we are using the spread operator to combine two arrays (arr_1 and arr_2) into a single array. The resulting array will contain all the elements from both arrays in the order they were defined.
 const arr_3 = [1, 2, 3, 4, 5, 2, 5, 7, 9]; 
 const arr_4 = [6, 7, 8, 9, 10, 11, 45, 23, 45];
-console.log([...arr_1, ...arr_2]);
-console.log([...new Set([...arr_1, ...arr_2])]);
+console.log([...arr_3, ...arr_4]);
+console.log([...new Set([...arr_3, ...arr_4])]);
 // In the second console.log statement, we are using the Set object to remove duplicate values from the combined array. The Set object only allows unique values, so it will automatically filter out any duplicates. By spreading the combined array into a new Set and then back into an array, we can create a new array that contains only unique values from both arrays.
 
 // Rest parameters in JavaScript allow you to represent an indefinite number of arguments as an array. This is useful when you want to create a function that can accept any number of arguments without having to specify them individually.
@@ -62,3 +62,18 @@ function add(...args){
     return args
 }
 console.log(add(10, 20, 30, 40, 50)); // This will return an array containing all the arguments passed to the function.
+
+const val = [60, 70, 80, 90, 100];
+const map_res = val.map(e => e * 2);
+console.log(map_res);
+
+const filter_res = val.filter(e => e > 60);
+console.log(filter_res);
+
+const red_val = [100, 200, 300, 400, 500];
+const reduce_res = red_val.reduce((acc, curr) => acc + curr, 25);
+console.log(reduce_res);
+
+red_val.forEach(e => {
+    console.log(e);
+});
